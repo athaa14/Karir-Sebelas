@@ -8802,6 +8802,10 @@ th {
   text-align: -webkit-match-parent;
 }
 
+.large-icon {
+  font-size: 3rem; /* Adjust this value to make the icon larger or smaller */
+}
+
 label {
   display: inline-block;
   margin-bottom: 0.5rem;
@@ -9129,9 +9133,9 @@ pre code {
 .container-md,
 .container-lg,
 .container-xl {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  width: 500px;
+  padding-right: 40px;
+  padding-left: 40px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -10344,6 +10348,78 @@ pre code {
   background-color: rgba(255, 255, 255, 0.075);
 }
 
+.form-select {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+  -moz-padding-start: calc(0.75rem - 3px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .form-select {
+    transition: none;
+  }
+}
+.form-select:focus {
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.form-select[multiple], .form-select[size]:not([size="1"]) {
+  padding-right: 0.75rem;
+  background-image: none;
+}
+.form-control-rounded-input {
+  border-radius: 60px;
+}
+.form-select:disabled {
+  background-color: #e9ecef;
+}
+.form-select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #212529;
+}
+.visually-hidden,
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.form-select-sm {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.form-select-lg {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  font-size: 1.25rem;
+}
+
 @media (max-width: 575.98px) {
   .table-responsive-sm {
     display: block;
@@ -10415,7 +10491,7 @@ pre code {
   background-color: #ffffff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  border-radius: 2px;
+  border-radius: 10px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -11619,6 +11695,11 @@ input[type="button"].btn-block {
   }
 }
 
+  .align-left {
+    text-align: left;
+}
+
+
 @media (min-width: 1200px) {
   .dropdown-menu-xl-left {
     right: auto;
@@ -12567,6 +12648,10 @@ input[type="button"].btn-block {
   margin-bottom: -1px;
 }
 
+.active{
+  background-color: #183188;
+}
+
 .nav-tabs .nav-link {
   border: 1px solid transparent;
   border-top-left-radius: 0.25rem;
@@ -12634,6 +12719,7 @@ input[type="button"].btn-block {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  /* background-image: url(/images/bg1.jpg) center center no-repeat; */
 }
 
 .navbar .container,
@@ -18455,15 +18541,18 @@ input:focus {
 }
 
 .bg-twitter {
-  background: #2caae1;
+  background: #FF9800;
+  color: #ffffff;
 }
 
 .bg-facebook {
-  background: #3b579d;
+  background: #5F8670;
+  color: #ffffff;
 }
 
 .bg-google {
-  background: #dc4a38;
+  background:  #B80000;
+  color: #000000;
 }
 
 .bg-linkedin {
@@ -19108,6 +19197,11 @@ code {
 }
 
 .btn-facebook {
+  background: #dc4a38;
+  color: #ffffff;
+}
+
+.btn-perusahaan {
   background: #3b579d;
   color: #ffffff;
 }
@@ -19140,7 +19234,7 @@ code {
 }
 
 .btn-google {
-  background: #dc4a38;
+  background: #FF9800;
   color: #ffffff;
 }
 
@@ -20345,7 +20439,7 @@ dl li {
 /* === Landing screens === */
 /* Auth */
 .auth .login-half-bg {
-  background: url("../images/auth/login-bg.jpg");
+  background: url("../images/view11.jpeg");
   background-size: cover;
 }
 
@@ -20521,6 +20615,7 @@ dl li {
 
 .sidebar .nav {
   overflow: hidden;
+  position: fixed;
   flex-wrap: nowrap;
   flex-direction: column;
   margin-bottom: 60px;
@@ -20723,7 +20818,7 @@ dl li {
   -webkit-transition: background 0.25s ease;
   -moz-transition: background 0.25s ease;
   -ms-transition: background 0.25s ease;
-  background: url(../images/other/navbar-cover.jpg) center center no-repeat;
+  background: url(../images/bg1.jpg) center center no-repeat;
   background-size: cover;
   height: 262px;
   width: auto;
@@ -20760,9 +20855,9 @@ dl li {
   display: inline-block;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 300px) {
   .navbar .navbar-menu-wrapper .navbar-brand-wrapper .navbar-brand.brand-logo img {
-    height: 36px;
+    height: 8px;
   }
 }
 
@@ -20854,6 +20949,34 @@ dl li {
   top: 65px;
 }
 
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #1e2125;
+  background-color: #e9ecef;
+}
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #0d6efd;
+}
+.dropdown-item.disabled, .dropdown-item:disabled {
+  color: #adb5bd;
+  pointer-events: none;
+  background-color: transparent;
+}
+
 .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item {
   margin-bottom: 0;
   padding: 0.65rem 1.5rem;
@@ -20862,6 +20985,10 @@ dl li {
 
 .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item i {
   font-size: 17px;
+}
+
+.ps {
+  padding-left: 35px;
 }
 
 .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item .badge {
@@ -21126,5 +21253,120 @@ dl li {
     padding-left: 20px;
   }
 }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.box {
+  box-sizing: border-box;
+  min-height: 1px;
+  position: relative;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 16.6667%;
+  flex: 0 0 16.6667%;
+  max-width: 16.6667%;
+  margin: 4px 0px;
+  right: auto;
+  left: auto;
+}
+.box img {
+  max-width: 60%; /* Mengatur gambar agar tidak terlalu besar */
+  height: auto;
+  border-radius: 5px;
+  text-align: center;
+}
+.box p {
+  margin-top: 10px;
+  text-align: center;
+}
+.grid-box {
+  background-color: grey;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc; /* Tambahkan garis untuk menandai batas kolom */
+}
+
+.main-panel {
+  padding: 20px;
+}
+.content-wrapper {
+  padding: 20px;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.card {
+  border-radius: 15px;
+}
+.card-body {
+  text-align: start;
+}
+.transparent-column {
+  background-color: rgba(0, 0, 0, 0); /* Nilai alpha (0.1) menunjukkan tingkat transparansi */
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.main-panel {
+  padding: 20px;
+}
+.content-wrapper {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.card {
+  border-radius: 15px;
+}
+.card-body {
+  text-align: start;
+}
+.company-logo {
+  max-width: 100px;
+  margin: 10px;
+  border: 0px solid rgba(0, 0, 0, 0.1); /* Transparan border */
+  border-radius: 5px;
+}
+
+.transparent-column {
+  padding-bottom: 20px; /* Menambahkan jarak antara gambar */
+}
+
+.company-logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; /* Mengatur lebar maksimum gambar agar tidak melebihi lebar kolom */
+  max-height: 100px; /* Mengatur tinggi maksimum gambar */
+  height: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+
+.company-logo:hover {
+  opacity: 1; /* Mengubah opacity saat cursor mouse mengarah ke gambar */
+}
+
+
+/* Mengatur gambar di tengah-tengah kotak */
+/* .image-company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+} */
+
+/* Menyembunyikan garis kotak */
+
+
 
 /*# sourceMappingURL=maps/style.css.map */

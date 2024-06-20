@@ -17,47 +17,58 @@
   <!-- endinject -->
   <link rel="shortcut icon" href="images/favicon.png" />
 </head>
-
 <body>
   <div class="container-scroller d-flex">
     <!-- partial:./partials/_sidebar.html -->
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
       <ul class="nav">
         <img
-          src="images/Black___Blue_Minimalist_Modern_Initial_Font_Logo-removebg-preview (1).png"
-          class=" d-flex align-items-center ps justify-content-center flex-"
-          alt=""
-          width="190px"
-          height="100px"
-          class=""
-        />
-        <img
-          src="images/Kaerier__4_-removebg-preview (1).png"
-          class=" d-flex align-items-center justify-content-center flex-"
-          alt=""
-          width="240px"
-          height="80px"
-        />
+        src="images/Black___Blue_Minimalist_Modern_Initial_Font_Logo-removebg-preview (1).png"
+        class=" d-flex align-items-center ps justify-content-center flex-"
+        alt=""
+        width="190px"
+        height="100px"
+        class=""
+      />
+      <img
+        src="images/Kaerier__4_-removebg-preview (1).png"
+        class=" d-flex align-items-center justify-content-center flex-"
+        alt=""
+        width="240px"
+        height="80px"
+      />
         <li class="nav-item">
-          <a class="nav-link" href="index.html">
+          <a class="nav-link active" id="dropdownMenuButton1" href="admin.html">
             <i class="mdi mdi-view-quilt menu-icon"></i>
-            <span class="menu-title">Dashboard Alumni</span>
+            <span class="menu-title">Dashboard Admin</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="profilalumni.html">
+          <a class="nav-link" href="akunalumni.html">
             <i class="mdi mdi-account menu-icon"></i>
-            <span class="menu-title">Profile</span>
+            <span class="menu-title">Akun Alumni</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="loker.html">
-            <i class="mdi mdi-clipboard-text menu-icon"></i>
-            <span class="menu-title">Info Loker</span>
+          <a class="nav-link" href="akunperusahaan.html">
+            <i class="mdi mdi-domain menu-icon"></i>
+            <span class="menu-title">Akun Perusahaan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dataloker.html">
+            <i class="mdi mdi-bulletin-board menu-icon"></i>
+            <span class="menu-title">Data Loker</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="datalamaran.html">
+            <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+            <span class="menu-title">Data Lamaran</span>
           </a>
         </li>
       </ul>
-    </nav>
+    </nav>    
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
       <!-- partial:./partials/_navbar.html -->
@@ -76,17 +87,15 @@
               <h4 class="mb-0 font-weight-bold d-none d-xl-block">Mar 12, 2019 - Apr 10, 2019</h4>
             </li>
             <li class="nav-item dropdown mr-1">
-              <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center"
-                id="messageDropdown" href="#" data-toggle="dropdown">
+              <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
                 <i class="mdi mdi-calendar mx-0"></i>
                 <span class="count bg-info">2</span>
               </a>
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
-                aria-labelledby="messageDropdown">
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
                 <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
-                    <img src="images/faces/face4.jpg" alt="image" class="profile-pic">
+                      <img src="images/faces/face4.jpg" alt="image" class="profile-pic">
                   </div>
                   <div class="preview-item-content flex-grow">
                     <h6 class="preview-subject ellipsis font-weight-normal">David Grey
@@ -98,7 +107,7 @@
                 </a>
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
-                    <img src="images/faces/face2.jpg" alt="image" class="profile-pic">
+                      <img src="images/faces/face2.jpg" alt="image" class="profile-pic">
                   </div>
                   <div class="preview-item-content flex-grow">
                     <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook
@@ -110,7 +119,7 @@
                 </a>
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
-                    <img src="images/faces/face3.jpg" alt="image" class="profile-pic">
+                      <img src="images/faces/face3.jpg" alt="image" class="profile-pic">
                   </div>
                   <div class="preview-item-content flex-grow">
                     <h6 class="preview-subject ellipsis font-weight-normal"> Johnson
@@ -123,13 +132,11 @@
               </div>
             </li>
             <li class="nav-item dropdown mr-2">
-              <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center"
-                id="notificationDropdown" href="#" data-toggle="dropdown">
+              <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center" id="notificationDropdown" href="#" data-toggle="dropdown">
                 <i class="mdi mdi-email-open mx-0"></i>
                 <span class="count bg-danger">1</span>
               </a>
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
-                aria-labelledby="notificationDropdown">
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
                 <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
@@ -173,8 +180,7 @@
               </div>
             </li>
           </ul>
-          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
-            data-toggle="offcanvas">
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
             <span class="mdi mdi-menu"></span>
           </button>
         </div>
@@ -182,15 +188,14 @@
           <ul class="navbar-nav mr-lg-2">
             <li class="nav-item nav-search d-none d-lg-block">
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search Here..." aria-label="search"
-                  aria-describedby="search">
+                <input type="text" class="form-control" placeholder="Search Here..." aria-label="search" aria-describedby="search">
               </div>
             </li>
           </ul>
           <ul class="navbar-nav navbar-nav-right">
             <li class="nav-item nav-profile dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-                <img src="images/faces/face5.jpg" alt="profile" />
+                <img src="images/faces/face5.jpg" alt="profile"/>
                 <span class="nav-profile-name">Rasyad Atha Z.</span>
               </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
@@ -207,41 +212,33 @@
           </ul>
         </div>
       </nav>
-      <!-- partial -->
+      <!-- partial -->  
       <div class="main-panel">
+        <h6 class="mt-2 mb-4" style="color: #4C4C4C;"></h6>
         <div class="content-wrapper">
-          
-          <!-- Isi tabel yang besar -->
-
           <div class="">
             <form class="row g-3 needs-validation" novalidate>
               <div class="col-md-3 mb-3">
-                <label for="validationCustom01" class="form-label">Masukan Nama</label>
-                <input type="text" class="form-control rounded-input" id="validationCustom01" value="Search Name"
-                  required>
+                <label for="validationCustom01" class="form-label">Tanggal</label>
+                <input type="text" class="form-control rounded-input" id="validationCustom01" placeholder="Tanggal" required>
                 <div class="valid-feedback">
                   Looks good!
                 </div>
               </div>
               <div class="col-md-3 mb-3">
-                <label for="validationCustom02" class="form-label">Jurusan</label>
-                <select class="form-control" id="validationCustom02" aria-label="Default select example">
-                  <option selected>pilih jurusan</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+                <label for="validationCustom02" class="form-label">Keterangan</label>
+                <input type="text" class="form-control rounded-input" id="validationCustom01" placeholder="Keterangan" required>
               </div>
               <div class="col-md-3 mb-3">
-                <label for="searchName" class="form-label">Tahun Lulus</label>
-                <input type="text" class="form-control" id="searchName" placeholder="">
+                <label for="searchName" class="form-label">Deskripsi</label>
+                <input type="text" class="form-control" id="searchName" placeholder="Deskripsi">
               </div>
               <div class="col-md-3 mb-3 d-flex align-items-end">
                 <button type="button" class="btn btn-primary btn-lg" onclick="searchAlumni()">Search</button>
               </div>
             </form>
           </div>
-          <div class="row">
+          <div class="row ">
             <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
@@ -249,26 +246,36 @@
                     <table class="table table-striped">
                       <thead>
                         <tr>
-                          <th>Foto</th>
-                          <th>Nama Lengkap</th>
-                          <th>Jurusan</th>
-                          <th>Tahun Lulus</th>
-                          <th>Jenis Kelamin</th>
-                          <th>Aksi</th>
+                          <th>
+                            Tanggal
+                          </th>
+                          <th>
+                            Keterangan
+                          </th>
+                          <th>
+                            Deskripsi
+                          </th>
+                          <th>
+                            Aksi
+                          </th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td class="py-1"><img src="images/faces/face1.jpg" alt="image" /></td>
-                          <td class="py-1">Herman Beck</td>
-                          <td>RPL</td>
-                          <td>2023</td>
-                          <td>Laki-laki</td>
+                          <td class="py-1">
+                            01-10-2023
+                          </td>
                           <td>
-
-                            <!-- Button trigger modal -->
+                            Edit
+                          </td>
+                          <td>
+                            -
+                          </td>
+                          <td>
                             <a href="#" data-bs-toggle="modal"
                             data-bs-target="#exampleModal" class="btn btn-primary btn-sm">Detail</a>
+
+                            <!-- Modal -->
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                               aria-hidden="true">
                               <div class="modal-dialog">
@@ -279,12 +286,11 @@
                                       aria-label="Close"></button>
                                   </div>
                                   <div class="modal-body">
-                                    ...
+                                    Nama Lengkap: Herman Beck<br> Jurusan: RPL<BR> Tahun Lulus: 2023<br> Jenis Kelamin: Laki-laki
                                   </div>
                                   <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                       data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
                                   </div>
                                 </div>
                               </div>
@@ -293,146 +299,74 @@
                         </tr>
                         <tr>
                           <td class="py-1">
-                            <img src="images/faces/face2.jpg" alt="image" />
-                          </td>
-                          <td class="py-1">
-                            Messsy Adam
+                            02-11-2024
                           </td>
                           <td>
-                            RPL
+                            Edit
                           </td>
                           <td>
-                            2023
-                          </td>
-                          <td>
-                            Laki-laki
+                            -
                           </td>
                           <td>
                             <a href="#" data-bs-toggle="modal"
                             data-bs-target="#exampleModal" class="btn btn-primary btn-sm">Detail</a>
 
                             <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                              aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                      aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    Nama Lengkap: Herman Beck<br> Jurusan: RPL<BR> Tahun Lulus: 2023<br> Jenis Kelamin: Laki-laki
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                      data-bs-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </td>
                         </tr>
                         <tr>
                           <td class="py-1">
-                            <img src="images/faces/face3.jpg" alt="image" />
-                          </td>
-                          <td class="py-1">
-                            <!-- <img src="images/faces/face3.jpg" alt="image"/> -->
-                            John Richards
+                            02-12-2025
                           </td>
                           <td>
-                            RPL
+                            Edit
                           </td>
                           <td>
-                            2023
-                          </td>
-                          <td>
-                            Laki-laki
+                            -
                           </td>
                           <td>
                             <a href="#" data-bs-toggle="modal"
                             data-bs-target="#exampleModal" class="btn btn-primary btn-sm">Detail</a>
 
                             <!-- Modal -->
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-1">
-                            <img src="images/faces/face4.jpg" alt="image" />
-                          </td>
-                          <td class="py-1">
-                            <!-- <img src="images/faces/face4.jpg" alt="image"/> -->
-                            Peter Meggik
-                          </td>
-                          <td>
-                            RPL
-                          </td>
-                          <td>
-                            2023
-                          </td>
-                          <td>
-                            Laki-laki
-                          </td>
-                          <td>
-                            <!-- Button trigger modal -->
-                            <a href="#" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal" class="btn btn-primary btn-sm">Detail</a>
-                              
-                              <!-- Modal -->
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-1">
-                            <img src="images/faces/face5.jpg" alt="image" />
-                          </td>
-                          <td class="py-1">
-                            <!-- <img src="images/faces/face5.jpg" alt="image"/> -->
-                            Edward
-                          </td>
-                          <td>
-                            RPL
-                          </td>
-                          <td>
-                            2023
-                          </td>
-                          <td>
-                            Laki-laki
-                          </td>
-                          <td>
-                            <a href="#" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal" class="btn btn-primary btn-sm">Detail</a>
-
-                            <!-- Modal -->
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-1">
-                            <img src="images/faces/face6.jpg" alt="image" />
-                          </td>
-                          <td class="py-1">
-                            <!-- <img src="images/faces/face6.jpg" alt="image"/> -->
-                            John Doe
-                          </td>
-                          <td>
-                            RPL
-                          </td>
-                          <td>
-                            2023
-                          </td>
-                          <td>
-                            Laki-laki
-                          </td>
-                          <td>
-                            <a href="#" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal" class="btn btn-primary btn-sm">Detail</a>
-
-                            <!-- Modal -->
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-1">
-                            <img src="images/faces/face7.jpg" alt="image" />
-                          </td>
-                          <td class="py-1">
-                            <!-- <img src="images/faces/face7.jpg" alt="image"/> -->
-                            Henry Tom
-                          </td>
-                          <td>
-                            RPL
-                          </td>
-                          <td>
-                            2023
-                          </td>
-                          <td>
-                            Laki-laki
-                          </td>
-                          <td>
-                            <a href="#" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal" class="btn btn-primary btn-sm">Detail</a>
-
-                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                              aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                      aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    Nama Lengkap: Herman Beck<br> Jurusan: RPL<BR> Tahun Lulus: 2023<br> Jenis Kelamin: Laki-laki
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                      data-bs-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </td>
                         </tr>
                       </tbody>
@@ -441,79 +375,72 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 grid-margin stretch-card">
-              <div class="card bg-facebook d-flex align-items-center">
-                <div class="card-body py-5">
-                  <div
-                    class="d-flex flex-row align-items-center flex-wrap justify-content-md-center justify-content-xl-start py-1">
-                    <i class="mdi mdi-briefcase text-white icon-lg"></i>
-                    <div class="ml-3 ml-md-0 ml-xl-3">
-                      <h5 class="text-white font-weight-bold">Bekerja</h5>
-                      <p class="mt-2 text-white card-text">300+ Alumni</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="card bg-google d-flex align-items-center">
-                <div class="card-body py-5">
-                  <div
-                    class="d-flex flex-row align-items-center flex-wrap justify-content-md-center justify-content-xl-start py-1">
-                    <i class="mdi mdi-school text-white icon-lg"></i>
-                    <div class="ml-3 ml-md-0 ml-xl-3">
-                      <h5 class="text-white font-weight-bold">Melanjutkan <br> Pendidikan</h5>
-                      <p class="mt-2 text-white card-text">400+ Alumni</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="card bg-twitter d-flex align-items-center">
-                <div class="card-body py-5">
-                  <div
-                    class="d-flex flex-row align-items-center flex-wrap justify-content-md-center justify-content-xl-start py-1">
-                    <i class="mdi mdi-store text-white icon-lg"></i>
-                    <div class="ml-3 ml-md-0 ml-xl-3">
-                      <h5 class="text-white font-weight-bold">Berwirausaha</h5>
-                      <p class="mt-2 text-white card-text">200+ Alumni</p>
-                    </div>
+          </div> 
+        
+        <!-- row end -->
+        <div class="row">
+          <div class="col-md-4 grid-margin stretch-card">
+            <div class="card bg-facebook d-flex align-items-center">
+              <div class="card-body py-5">
+                <div
+                  class="d-flex flex-row align-items-center flex-wrap justify-content-md-center justify-content-xl-start py-1">
+                  <i class="mdi mdi-briefcase text-white icon-lg"></i>
+                  <div class="ml-3 ml-md-0 ml-xl-3">
+                    <h5 class="text-white font-weight-bold">Bekerja</h5>
+                    <p class="mt-2 text-white card-text">300+ Alumni</p>
                   </div>
                 </div>
               </div>
             </div>
-            <footer class="footer">
-              <div class="card">
-                <div class="card-body">
-                  <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                    <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright ©
-                      bootstrapdash.com 2020</span>
-                    <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Distributed By: <a
-                        href="https://www.themewagon.com/" target="_blank">ThemeWagon</a></span>
-                    <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a
-                        href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard templates</a> from
-                      Bootstrapdash.com</span>
+
+            <div class="card bg-google d-flex align-items-center">
+              <div class="card-body py-5">
+                <div
+                  class="d-flex flex-row align-items-center flex-wrap justify-content-md-center justify-content-xl-start py-1">
+                  <i class="mdi mdi-school text-white icon-lg"></i>
+                  <div class="ml-3 ml-md-0 ml-xl-3">
+                    <h5 class="text-white font-weight-bold">Melanjutkan <br> Pendidikan</h5>
+                    <p class="mt-2 text-white card-text">400+ Alumni</p>
                   </div>
                 </div>
               </div>
-            </footer>
+            </div>
+
+            <div class="card bg-twitter d-flex align-items-center">
+              <div class="card-body py-5">
+                <div
+                  class="d-flex flex-row align-items-center flex-wrap justify-content-md-center justify-content-xl-start py-1">
+                  <i class="mdi mdi-store text-white icon-lg"></i>
+                  <div class="ml-3 ml-md-0 ml-xl-3">
+                    <h5 class="text-white font-weight-bold">Berwirausaha</h5>
+                    <p class="mt-2 text-white card-text">200+ Alumni</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-          <!-- row end -->
-          <!-- row end -->
-        </div>
-        <!-- content-wrapper ends -->
-        <!-- partial:./partials/_footer.html -->
-        <!-- partial -->
+        <footer class="footer">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright ©
+                  bootstrapdash.com 2020</span>
+                  <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Distributed By: <a
+                    href="https://www.themewagon.com/" target="_blank">ThemeWagon</a></span>
+                    <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a
+                      href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard templates</a> from
+                      Bootstrapdash.com</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </footer>
+        <!-- row end -->
       </div>
-      <!-- content-wrapper ends -->
-      <!-- partial:./partials/_footer.html -->
-      <!-- partial -->
+      <!-- main-panel ends -->
     </div>
-    <!-- main-panel ends -->
-  </div>
-  <!-- page-body-wrapper ends -->
+    <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
 
@@ -531,10 +458,9 @@
   <!-- plugin js for this page -->
   <!-- End plugin js for this page -->
   <!-- Custom js for this page-->
-  <script src="js/dashboard.js"></script>
   <script src="js/bootstrap.js"></script>
-  <script src="js/dash"></script>
+  <script src="js/dashboard.js"></script>
   <!-- End custom js for this page-->
 </body>
 
-</html>
+</html> 

@@ -7,7 +7,7 @@
       var AudienceChart = new Chart(AudienceChartCanvas, {
         type: 'bar',
         data: {
-          labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+          labels: ["2019", "2020", "2021", "2022", "2023", "2024"],
           datasets: [
             {
               type: 'line',
